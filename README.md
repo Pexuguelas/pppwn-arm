@@ -40,10 +40,23 @@ No need for a PC — just connect your ARM board directly to the PS4 via etherne
 
 ## Requisitos de hardware / Hardware Requirements
 
-- Placa ARM con ethernet (BeagleBone Black, Raspberry Pi, etc.)
+- Placa ARM con ethernet (ver placas recomendadas abajo)
 - Cable ethernet (conexión directa a la PS4 — **sin router/switch en medio**)
 - Alimentación USB para la placa ARM
 - Pendrive USB con `goldhen.bin` + `config.ini` conectado a la PS4
+
+### Placas recomendadas / Recommended boards
+
+| Placa / Board | Ethernet | Precio aprox. | Nota / Note |
+|---------------|----------|-------------|-------------|
+| **BeagleBone Black** ✅ | 100Mbps | ~35€ (2ª mano) | Probado y funcionando / Tested & working |
+| Orange Pi One | 100Mbps | ~45€ | H3 quad-core, 1GB RAM |
+| Orange Pi Zero | 100Mbps + WiFi | ~38€ | H2+, 512MB RAM, muy pequeña |
+| Orange Pi Zero 3 | Gigabit + WiFi | ~25€ | H618 quad A53, best value |
+| Raspberry Pi 3B+ | Gigabit | ~40€ (2ª mano) | Ampliamente disponible |
+
+> 💡 Cualquier placa ARM con Linux + ethernet sirve. El BeagleBone Black es el más probado con este repo.
+> 💡 Any ARM board with Linux + ethernet works. BeagleBone Black is the most tested with this repo.
 
 > ⚠️ **La PS4 debe estar conectada directamente a la placa ARM.** Los routers/switches filtran los paquetes PPPoE discovery y el exploit no funcionará a través de ellos.
 >
