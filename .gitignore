@@ -1,0 +1,8 @@
+# Binaries
+pppwn
+
+# OS
+.DS_Store
+
+# Logs
+*.log

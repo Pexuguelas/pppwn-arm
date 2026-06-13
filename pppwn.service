@@ -1,0 +1,14 @@
+[Unit]
+Description=PS4 GoldHEN PPPwn++ Auto-Exploit
+After=network.target network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+ExecStart=/home/debian/ps4/pppwn/run-pppwn.sh
+Restart=on-failure
+RestartSec=10
+WorkingDirectory=/home/debian/ps4/pppwn
+
+[Install]
+WantedBy=multi-user.target
